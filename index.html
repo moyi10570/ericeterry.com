@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Eric E Terry</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/jquery.mosaic.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/app.css" />
+    <script type="text/javascript" src="/assets/jquery.mosaic.min.js"></script>
+  </head>
+
+  <body>
+    <div id="mosaic" class="mosaic">
+      <img src="/photos/DSC00823.jpg" />
+      <img src="/photos/DSC00817.jpg" />
+      <img src="/photos/DSC00825.jpg" />
+      <img src="/photos/DSC00822.jpg" />
+      <img src="/photos/DSC00832.jpg" />
+      <img src="/photos/DSC00828.jpg" />
+      <img src="/photos/DSC00837.jpg" />
+      <img src="/photos/DSC00826.jpg" />
+      <img src="/photos/DSC00836.jpg" />
+      <img src="/photos/DSC00819.jpg" />
+      <img src="/photos/DSC00781.jpg" />
+      <img src="/photos/DSC00775.jpg" />
+      <img src="/photos/DSC00800.jpg" />
+      <img src="/photos/DSC00833.jpg" />
+      <img src="/photos/DSC00812.jpg" />
+    </div>
+
+    <script>
+      $(function() {
+        $('#mosaic img').each(function() {
+          $(this).width(this.naturalWidth + 'px').height(this.naturalHeight + 'px');
+        });
+
+        $('#mosaic').Mosaic();
+      });
+    </script>
+  </body>
+</html>
